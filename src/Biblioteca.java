@@ -14,6 +14,7 @@ public class Biblioteca {
 
     }
 
+    //metodos
     public void adicionarLivro(Livro livro){
         livros.add(livro);
     }
@@ -42,6 +43,7 @@ public class Biblioteca {
         emprestimos.remove(emprestimo);
     }
 
+    //get
     public ArrayList<Livro> getLivros(){
         return livros;
     }
