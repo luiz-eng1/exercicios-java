@@ -10,6 +10,7 @@ public class Livro {
         this.isbn = isbn;
     }
 
+    //setters
     public void setTitulo(String titulo){
         this.titulo = titulo;
     }
@@ -22,6 +23,7 @@ public class Livro {
         this.isbn = isbn;
     }
 
+    //getters
     public String getTitulo(){
         return titulo;
     }
