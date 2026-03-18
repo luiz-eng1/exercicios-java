@@ -12,6 +12,7 @@ public class Emprestimo {
         this.funcionario = funcionario;
     }
 
+    //setters
     public void setLivro(Livro livro){
         this.livro = livro;
     }
@@ -24,6 +25,7 @@ public class Emprestimo {
         this.data = data;
     }
 
+    //getters
     public Livro getLivro(){
         return livro;
     }
