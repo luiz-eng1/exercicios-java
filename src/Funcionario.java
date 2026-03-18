@@ -9,6 +9,7 @@ public class Funcionario {
         this.matricula = matricula;
     }
 
+    //setters
     public void setNome(String nome){
         this.nome = nome;
     }
@@ -16,6 +17,7 @@ public class Funcionario {
         this.matricula = matricula;
     }
 
+    //getters
     public String getNome(){
         return nome;
     }
