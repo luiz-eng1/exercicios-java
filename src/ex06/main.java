@@ -1,20 +1,24 @@
 package ex06;
-import java.util.Scanner;
-public class main {
-    public static void main(String[] args){
-        Scanner entrada = new Scanner(System.in);
+
+public class Main {
+    public static void main(String [] args){
+        //criar endereco
+        Endereco meuendereco = new Endereco();
+        meuendereco.setRua("raul soares");
+        meuendereco.setCidade("contagem");
+
+        //criar pessoa
         Pessoa p1 = new Pessoa();
-
-        System.out.println("Digite o nome: ");
-        String n = entrada.nextLine();
-        p1.setNome(n);
-
-        System.out.println("Digite a idade: ");
-        int i = entrada.nextInt();
-        p1.setIdade(i);
+        p1.setNome("luizin");
 
 
+        //associar endereço
+        p1.setEndereco(meuendereco);
 
-        p1.exibirDados();
+        //mostrar dados
+        System.out.print("Nome: " + p1.getNome());
+        System.out.print("Rua: "+ p1.getEndereco().getRua());
+        System.out.print("Cidade: "+ p1.getEndereco().getCidade());
     }
+
 }
