@@ -1,0 +1,26 @@
+Criando:
+Function<Produto, Integer> extrator = (p) -> p.getQuant();
+Predicate<Pedido> condição = (ped) -> (ped.valorTotal() >= 10 000);
+
+Como usar:
+public E getAtende(Predicate<E> critério){
+   for(celulaDupla<E> i = primeiro.getProximo(); i != null; i=i.getProximo()){
+       if(critério.test(i.getItem())
+         return i.getItem();
+}
+return null;
+}
+
+
+
+public int somatório(Function<E, Integer> ext){
+ int total = 0;
+ CelulaDupla<E> aux = primeiro.getProximo();
+ while(aux != null){
+ total +=  ext.apply(i.getItem());
+ aux = aux.getProximo();
+}
+return total;
+}
+
+ListaDupla<produto> produtos = new ListaDupla<>();
